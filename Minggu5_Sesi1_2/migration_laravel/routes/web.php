@@ -16,10 +16,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::resource('user', 'ManagementUserController');
-
-Route::group(['namespace' => 'Frontend'], function()
-    {
-        Route::resource('home', 'HomeController');
-    });
